@@ -10,7 +10,9 @@ def check():
     book = json.loads((ROOT / 'book.json').read_text())
     errors, metrics = [], []
     ids, slugs = set(), set()
-    for chapter in book['chapters']:
+    for number, chapter in enumerate(book['chapters'], 1):
+        if chapter.get('number') != number:
+            errors.append(f'non-continuous display number: {chapter["id"]}')
         path = ROOT / chapter['source']
         for key, seen in [('id', ids), ('slug', slugs)]:
             if chapter[key] in seen:
@@ -20,6 +22,9 @@ def check():
             errors.append(f'missing {path.relative_to(ROOT)}')
             continue
         text = path.read_text()
+        heading = re.match(r'# 第\s*(\d+)\s*章\s+(.+)', text)
+        if not heading or int(heading.group(1)) != number or heading.group(2).strip() != chapter['title']:
+            errors.append(f'{path.name}: heading differs from manifest')
         han = len(re.findall(r'[\u4e00-\u9fff]', text))
         images = re.findall(r'!\[[^\]]*\]\(([^)]+)\)', text)
         sources = re.findall(r'https?://[^\s)\]>]+', text)

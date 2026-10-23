@@ -1,10 +1,10 @@
 # 程序分析图解：语言、运行时与机器行为
 
-![程序分析：从语言结构到运行时与机器行为的视觉隐喻](assets/images/cover.png)
+![程序结构、运行时与机器行为的视觉隐喻](assets/images/cover.png)
 
-以程序行为为主线的中文图解入门书。覆盖语言语义、程序表示、静态推理、动态分析、验证、CPU/GPU、逆向、AI 辅助分析与评估。
+围绕程序行为，贯通语言语义、静态与动态分析、形式化证明、机器执行和工程验证。
 
-先读 [导读](appendices/reading-guide.md)，再按目录阅读。范围边界与写作计划见 [PLAN.md](PLAN.md)。
+从[导读](appendices/reading-guide.md)开始，按以下目录阅读。章节文件与链接保持稳定，阅读顺序由统一清单维护。
 
 ## 第 1 篇 语言与行为
 
@@ -42,30 +42,57 @@
 - [23　并发、异步与记录重放](chapters/23.md)
 - [24　模型检查、契约与演绎验证](chapters/24.md)
 
-## 第 5 篇 机器与异构
+## 第 5 篇 形式化规格与机器检查证明
 
-- [25　CPU、ABI 与机器级程序行为](chapters/25.md)
-- [26　内存模型、原子操作与可见性](chapters/26.md)
-- [27　逆向、反汇编与反编译](chapters/27.md)
-- [28　GPU：SIMT、内存与同步](chapters/28.md)
-- [29　性能分析：CPU、GPU 与数据搬运](chapters/29.md)
-- [30　跨语言、FFI 与动态机制](chapters/30.md)
+- [25　形式化方法的地图与规格细化](chapters/37.md)
+- [26　命题、类型与证明助手](chapters/38.md)
+- [27　Lean 实作：从定理陈述到内核检查](chapters/39.md)
+- [28　证明程序满足规格：归纳、契约与状态转换](chapters/40.md)
+- [29　程序等价、精化与编译变换验证](chapters/41.md)
+- [30　证明分析器与理解可信计算基础](chapters/42.md)
 
-## 第 6 篇 应用与构建
+## 第 6 篇 机器与异构
 
-- [31　缺陷、安全性质与威胁模型](chapters/31.md)
-- [32　优化、维护与变更影响分析](chapters/32.md)
-- [33　代表工具与分析架构](chapters/33.md)
-- [34　AI 辅助分析与证据管理](chapters/34.md)
-- [35　评估分析器与实验设计](chapters/35.md)
-- [36　搭建一个可运行的教学分析器](chapters/36.md)
+- [31　CPU、ABI 与机器级程序行为](chapters/25.md)
+- [32　内存模型、原子操作与可见性](chapters/26.md)
+- [33　逆向、反汇编与反编译](chapters/27.md)
+- [34　GPU：SIMT、内存与同步](chapters/28.md)
+- [35　性能分析：CPU、GPU 与数据搬运](chapters/29.md)
+- [36　跨语言、FFI 与动态机制](chapters/30.md)
+
+## 第 7 篇 数据、内存与资源的深入推理
+
+- [37　形状分析、分离逻辑与内存所有权](chapters/43.md)
+- [38　字符串、容器与数据结构分析](chapters/44.md)
+- [39　终止性、递归与资源复杂度](chapters/45.md)
+- [40　信息流、非干扰与隐私边界](chapters/47.md)
+- [41　浮点语义、数值误差与稳定性](chapters/48.md)
+
+## 第 8 篇 分析细化与工程闭环
+
+- [42　反例解释、可行性检查与抽象细化](chapters/46.md)
+- [43　分布式、持久化与崩溃恢复](chapters/49.md)
+- [44　增量分析、大型工程与摘要失效](chapters/50.md)
+- [45　程序合成、自动修复与验证闭环](chapters/51.md)
+
+## 第 9 篇 应用与构建
+
+- [46　缺陷、安全性质与威胁模型](chapters/31.md)
+- [47　优化、维护与变更影响分析](chapters/32.md)
+- [48　代表工具与分析架构](chapters/33.md)
+- [49　AI 辅助分析与证据管理](chapters/34.md)
+- [50　评估分析器与实验设计](chapters/35.md)
+- [51　搭建一个可运行的教学分析器](chapters/36.md)
 
 ## 附录与复现
 
 - [术语速查](appendices/glossary.md)
+- [延伸领域地图](appendices/frontiers.md)
 - [资料索引](references/source-index.md)
-- [审校记录](references/review.md)
-- [教学分析器](examples/)
+- [扩展版审校记录](references/review-expanded.md)
+- [展示编号与稳定身份对照](references/chapter-map.md)
+- [教学分析器](examples/README.md)
+- [Lean 证明文件与检查说明](examples/lean/README.md)
 
 ```bash
 python3 scripts/check_book.py
@@ -73,6 +100,8 @@ python3 -m unittest discover -s examples -p "test*.py"
 python3 scripts/build_book.py
 ```
 
-构建只使用 Python 标准库，生成合并 Markdown 和完整工程包。图片采用可编辑 SVG；章节可以独立阅读。工具文档链接用于继续学习，在线内容可能更新。
+构建与内容检查仅需 Python 3.10+ 标准库；可选图像预览使用 Pillow 与 Inkscape，或 Pillow 与 PyMuPDF。Lean 文件另按所附说明使用固定版本检查，不是普通书稿构建的必装依赖。
 
-工程包内包含 Git 历史 bundle，可用 `git clone build/history.bundle restored-book` 恢复已提交的版本历史。解压工程包直接阅读，无需恢复 Git。网页与 PDF 导出留待需要时配置，使用同一套正文与资源。
+构建输出合并 Markdown 和完整工程包，资源保留相对路径。工程包内的 build/history.bundle 可用 `git clone build/history.bundle restored-book` 恢复完整已提交历史；直接阅读无需恢复 Git。
+
+本次交付为 Markdown、SVG/封面与可运行示例；网页和 PDF 可复用相同主稿另行发布。

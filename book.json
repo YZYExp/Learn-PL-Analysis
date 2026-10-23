@@ -464,5 +464,6 @@
     }
   ],
   "cover": "assets/images/cover.png",
-  "edition": "expanded"
+  "edition": "expanded",
+  "numbering_schema": "display-v2"
 }
