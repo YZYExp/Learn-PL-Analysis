@@ -247,13 +247,31 @@
       "number": 27
     },
     {
+      "id": "ch52",
+      "title": "Rocq 实作：定义、归纳与内核检查",
+      "source": "chapters/52.md",
+      "slug": "chapter-52",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 28
+    },
+    {
+      "id": "ch53",
+      "title": "Lean 与 Rocq 同题对照：证据、目标与自动化",
+      "source": "chapters/53.md",
+      "slug": "chapter-53",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 29
+    },
+    {
       "id": "ch40",
       "title": "证明程序满足规格：归纳、契约与状态转换",
       "source": "chapters/40.md",
       "slug": "chapter-40",
       "part": 5,
       "part_title": "形式化规格与机器检查证明",
-      "number": 28
+      "number": 30
     },
     {
       "id": "ch41",
@@ -262,7 +280,25 @@
       "slug": "chapter-41",
       "part": 5,
       "part_title": "形式化规格与机器检查证明",
-      "number": 29
+      "number": 31
+    },
+    {
+      "id": "ch54",
+      "title": "CompCert 案例：程序语义、模拟与编译正确性",
+      "source": "chapters/54.md",
+      "slug": "chapter-54",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 32
+    },
+    {
+      "id": "ch55",
+      "title": "VST 案例：C 程序、内存资源与验证责任",
+      "source": "chapters/55.md",
+      "slug": "chapter-55",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 33
     },
     {
       "id": "ch42",
@@ -271,7 +307,7 @@
       "slug": "chapter-42",
       "part": 5,
       "part_title": "形式化规格与机器检查证明",
-      "number": 30
+      "number": 34
     },
     {
       "id": "ch25",
@@ -280,7 +316,7 @@
       "title": "CPU、ABI 与机器级程序行为",
       "source": "chapters/25.md",
       "slug": "chapter-25",
-      "number": 31
+      "number": 35
     },
     {
       "id": "ch26",
@@ -289,7 +325,7 @@
       "title": "内存模型、原子操作与可见性",
       "source": "chapters/26.md",
       "slug": "chapter-26",
-      "number": 32
+      "number": 36
     },
     {
       "id": "ch27",
@@ -298,7 +334,7 @@
       "title": "逆向、反汇编与反编译",
       "source": "chapters/27.md",
       "slug": "chapter-27",
-      "number": 33
+      "number": 37
     },
     {
       "id": "ch28",
@@ -307,7 +343,7 @@
       "title": "GPU：SIMT、内存与同步",
       "source": "chapters/28.md",
       "slug": "chapter-28",
-      "number": 34
+      "number": 38
     },
     {
       "id": "ch29",
@@ -316,7 +352,7 @@
       "title": "性能分析：CPU、GPU 与数据搬运",
       "source": "chapters/29.md",
       "slug": "chapter-29",
-      "number": 35
+      "number": 39
     },
     {
       "id": "ch30",
@@ -325,7 +361,7 @@
       "title": "跨语言、FFI 与动态机制",
       "source": "chapters/30.md",
       "slug": "chapter-30",
-      "number": 36
+      "number": 40
     },
     {
       "id": "ch43",
@@ -334,7 +370,7 @@
       "slug": "chapter-43",
       "part": 7,
       "part_title": "数据、内存与资源的深入推理",
-      "number": 37
+      "number": 41
     },
     {
       "id": "ch44",
@@ -343,7 +379,7 @@
       "slug": "chapter-44",
       "part": 7,
       "part_title": "数据、内存与资源的深入推理",
-      "number": 38
+      "number": 42
     },
     {
       "id": "ch45",
@@ -352,7 +388,7 @@
       "slug": "chapter-45",
       "part": 7,
       "part_title": "数据、内存与资源的深入推理",
-      "number": 39
+      "number": 43
     },
     {
       "id": "ch47",
@@ -361,7 +397,7 @@
       "slug": "chapter-47",
       "part": 7,
       "part_title": "数据、内存与资源的深入推理",
-      "number": 40
+      "number": 44
     },
     {
       "id": "ch48",
@@ -370,7 +406,7 @@
       "slug": "chapter-48",
       "part": 7,
       "part_title": "数据、内存与资源的深入推理",
-      "number": 41
+      "number": 45
     },
     {
       "id": "ch46",
@@ -379,7 +415,7 @@
       "slug": "chapter-46",
       "part": 8,
       "part_title": "分析细化与工程闭环",
-      "number": 42
+      "number": 46
     },
     {
       "id": "ch49",
@@ -388,7 +424,7 @@
       "slug": "chapter-49",
       "part": 8,
       "part_title": "分析细化与工程闭环",
-      "number": 43
+      "number": 47
     },
     {
       "id": "ch50",
@@ -397,7 +433,7 @@
       "slug": "chapter-50",
       "part": 8,
       "part_title": "分析细化与工程闭环",
-      "number": 44
+      "number": 48
     },
     {
       "id": "ch51",
@@ -406,7 +442,7 @@
       "slug": "chapter-51",
       "part": 8,
       "part_title": "分析细化与工程闭环",
-      "number": 45
+      "number": 49
     },
     {
       "id": "ch31",
@@ -415,7 +451,7 @@
       "title": "缺陷、安全性质与威胁模型",
       "source": "chapters/31.md",
       "slug": "chapter-31",
-      "number": 46
+      "number": 50
     },
     {
       "id": "ch32",
@@ -424,7 +460,7 @@
       "title": "优化、维护与变更影响分析",
       "source": "chapters/32.md",
       "slug": "chapter-32",
-      "number": 47
+      "number": 51
     },
     {
       "id": "ch33",
@@ -433,7 +469,7 @@
       "title": "代表工具与分析架构",
       "source": "chapters/33.md",
       "slug": "chapter-33",
-      "number": 48
+      "number": 52
     },
     {
       "id": "ch34",
@@ -442,7 +478,7 @@
       "title": "AI 辅助分析与证据管理",
       "source": "chapters/34.md",
       "slug": "chapter-34",
-      "number": 49
+      "number": 53
     },
     {
       "id": "ch35",
@@ -451,7 +487,7 @@
       "title": "评估分析器与实验设计",
       "source": "chapters/35.md",
       "slug": "chapter-35",
-      "number": 50
+      "number": 54
     },
     {
       "id": "ch36",
@@ -460,10 +496,10 @@
       "title": "搭建一个可运行的教学分析器",
       "source": "chapters/36.md",
       "slug": "chapter-36",
-      "number": 51
+      "number": 55
     }
   ],
   "cover": "assets/images/cover.png",
-  "edition": "expanded",
-  "numbering_schema": "display-v2"
+  "edition": "rocq-expanded",
+  "numbering_schema": "rocq-planned"
 }
