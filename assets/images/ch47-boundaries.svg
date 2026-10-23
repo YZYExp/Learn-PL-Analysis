@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#506580"/></marker></defs><rect width="760" height="900" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="35" y="50" font-size="32" font-weight="bold">从信息流策略到隐私边界</text>
+<text x="35" y="92" font-size="24">每一层都要明确输入、观察与允许披露的内容</text>
+<rect x="70" y="135" width="620" height="100" rx="14" fill="#E4EDFF" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="176.0" font-size="26" text-anchor="middle">① 策略</text>
+<text x="380.0" y="212.0" font-size="26" text-anchor="middle">谁可以观察什么？哪些信息可授权公开？</text>
+<path d="M380,235 L380,265" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="265" width="620" height="100" rx="14" fill="#E4EDFF" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="306.0" font-size="26" text-anchor="middle">② 观察模型</text>
+<text x="380.0" y="342.0" font-size="26" text-anchor="middle">返回值、终止、时间是否都在范围内？</text>
+<path d="M380,365 L380,395" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="395" width="620" height="100" rx="14" fill="#DDF4ED" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="436.0" font-size="26" text-anchor="middle">③ 两次执行关系</text>
+<text x="380.0" y="472.0" font-size="26" text-anchor="middle">公开输入相同，改变秘密，比较观察</text>
+<path d="M380,495 L380,525" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="525" width="620" height="100" rx="14" fill="#FFF0D9" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="566.0" font-size="26" text-anchor="middle">④ 释放与组合</text>
+<text x="380.0" y="602.0" font-size="26" text-anchor="middle">降密条件明确；多次输出也要检查</text>
+<path d="M380,625 L380,655" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="655" width="620" height="125" rx="14" fill="#EEF1F7" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="690.5" font-size="26" text-anchor="middle">⑤ 数据发布另定保证</text>
+<text x="380.0" y="726.5" font-size="26" text-anchor="middle">去标识化 ≠ 已证明隐私</text>
+<text x="380.0" y="762.5" font-size="26" text-anchor="middle">差分隐私比较相邻数据上的随机分布</text>
+<text x="35" y="840" font-size="24" text-anchor="start">本章定位差分隐私边界，不提供完整机制证明。</text>
+</g></svg>

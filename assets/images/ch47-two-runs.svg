@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#506580"/></marker></defs><rect width="760" height="900" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="35" y="50" font-size="32" font-weight="bold">非干扰：比较两次执行</text>
+<text x="35" y="92" font-size="24">观察仅为返回整数；函数确定且都会终止</text>
+<rect x="70" y="135" width="620" height="95" rx="14" fill="#E4EDFF" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="173.5" font-size="26" text-anchor="middle">共同公开输入：amount = 200</text>
+<text x="380.0" y="209.5" font-size="26" text-anchor="middle">两次执行只改变秘密 vip</text>
+<path d="M380,230 L380,265" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="265" width="620" height="115" rx="14" fill="#E4EDFF" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="295.5" font-size="26" text-anchor="middle">执行一：vip = False</text>
+<text x="380.0" y="331.5" font-size="26" text-anchor="middle">选择常量分支 result = 0</text>
+<text x="380.0" y="367.5" font-size="26" text-anchor="middle">公开观察：0</text>
+<path d="M380,380 L380,415" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="415" width="620" height="115" rx="14" fill="#FFF0D9" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="445.5" font-size="26" text-anchor="middle">执行二：vip = True</text>
+<text x="380.0" y="481.5" font-size="26" text-anchor="middle">选择常量分支 result = 1</text>
+<text x="380.0" y="517.5" font-size="26" text-anchor="middle">公开观察：1</text>
+<path d="M380,530 L380,565" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="565" width="620" height="105" rx="14" fill="#FFF0D9" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="608.5" font-size="26" text-anchor="middle">比较：0 ≠ 1</text>
+<text x="380.0" y="644.5" font-size="26" text-anchor="middle">相同公开输入，秘密影响公开观察</text>
+<path d="M380,670 L380,705" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="705" width="620" height="75" rx="14" fill="#EEF1F7" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="751.5" font-size="26" text-anchor="middle">本例违反所定义的非干扰性质</text>
+<text x="35" y="840" font-size="24" text-anchor="start">没有复制秘密字段，也能经控制依赖传播信息。</text>
+</g></svg>

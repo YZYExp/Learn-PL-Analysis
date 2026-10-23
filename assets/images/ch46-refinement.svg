@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#506580"/></marker></defs><rect width="760" height="900" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="35" y="50" font-size="32" font-weight="bold">反例为何出现在粗抽象中</text>
+<text x="35" y="92" font-size="24">数学整数；输入范围为 −100 到 100</text>
+<rect x="70" y="135" width="620" height="95" rx="14" fill="#E4EDFF" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="173.5" font-size="26" text-anchor="middle">具体执行：x = 输入；y = x</text>
+<text x="380.0" y="209.5" font-size="26" text-anchor="middle">实际关系始终有 x = y</text>
+<path d="M380,230 L380,265" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="265" width="620" height="110" rx="14" fill="#FFF0D9" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="293.0" font-size="26" text-anchor="middle">粗抽象只保留两个区间</text>
+<text x="380.0" y="329.0" font-size="26" text-anchor="middle">x ∈ [−100,100]</text>
+<text x="380.0" y="365.0" font-size="26" text-anchor="middle">y ∈ [−100,100]</text>
+<path d="M380,375 L380,410" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="410" width="620" height="95" rx="14" fill="#FFF0D9" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="448.5" font-size="26" text-anchor="middle">区间组合还包含 (x,y) = (3,4)</text>
+<text x="380.0" y="484.5" font-size="26" text-anchor="middle">于是可能允许错误条件 x ≠ y</text>
+<path d="M380,505 L380,540" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="540" width="620" height="95" rx="14" fill="#EEF1F7" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="578.5" font-size="26" text-anchor="middle">精确路径：y = x 且 x ≠ y</text>
+<text x="380.0" y="614.5" font-size="26" text-anchor="middle">矛盾：该候选路径不可行</text>
+<path d="M380,635 L380,670" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="670" width="620" height="110" rx="14" fill="#DDF4ED" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="698.0" font-size="26" text-anchor="middle">细化：增加相等谓词 p ≡ (x = y)</text>
+<text x="380.0" y="734.0" font-size="26" text-anchor="middle">复制后 p 为真；错误分支要求 p 为假</text>
+<text x="380.0" y="770.0" font-size="26" text-anchor="middle">重新检查时排除这条伪反例</text>
+<text x="35" y="840" font-size="24" text-anchor="start">保留真实行为，同时排除近似引入的伪路径。</text>
+</g></svg>

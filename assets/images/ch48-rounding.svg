@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#506580"/></marker></defs><rect width="760" height="900" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="35" y="50" font-size="32" font-weight="bold">逐步舍入改变加法分组结果</text>
+<text x="35" y="92" font-size="24">binary64；最近舍入，居中选偶数</text>
+<rect x="70" y="135" width="620" height="105" rx="14" fill="#E4EDFF" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="178.5" font-size="26" text-anchor="middle">x = 2^53</text>
+<text x="380.0" y="214.5" font-size="26" text-anchor="middle">向上的相邻可表示数：x 与 x + 2</text>
+<path d="M380,240 L380,275" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="275" width="620" height="175" rx="14" fill="#FFF0D9" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="317.5" font-size="26" text-anchor="middle">左分组：(x + 1) + (−x)</text>
+<text x="380.0" y="353.5" font-size="26" text-anchor="middle">x + 1 位于两个值正中</text>
+<text x="380.0" y="389.5" font-size="26" text-anchor="middle">舍入后 x + 1 → x</text>
+<text x="380.0" y="425.5" font-size="26" text-anchor="middle">再加 −x → 0</text>
+<path d="M380,450 L380,485" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="485" width="620" height="175" rx="14" fill="#DDF4ED" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="527.5" font-size="26" text-anchor="middle">右分组：x + (1 + (−x))</text>
+<text x="380.0" y="563.5" font-size="26" text-anchor="middle">1 − x 是可精确表示的整数</text>
+<text x="380.0" y="599.5" font-size="26" text-anchor="middle">加回 x → 1</text>
+<text x="380.0" y="635.5" font-size="26" text-anchor="middle">同样的三个项，结果不同</text>
+<path d="M380,660 L380,695" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="695" width="620" height="90" rx="14" fill="#EEF1F7" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="731.0" font-size="26" text-anchor="middle">结论：0 ≠ 1</text>
+<text x="380.0" y="767.0" font-size="26" text-anchor="middle">不能直接套用实数加法结合律</text>
+<text x="35" y="840" font-size="24" text-anchor="start">假设每步均按该格式舍入，不额外提高中间精度。</text>
+</g></svg>

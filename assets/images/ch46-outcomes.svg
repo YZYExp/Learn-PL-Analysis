@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#506580"/></marker></defs><rect width="760" height="900" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="35" y="50" font-size="32" font-weight="bold">反例检查必须保留三种结果</text>
+<text x="35" y="92" font-size="24">对整条候选路径构造同一组状态约束</text>
+<rect x="70" y="135" width="620" height="100" rx="14" fill="#E4EDFF" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="176.0" font-size="26" text-anchor="middle">路径的赋值、分支与环境摘要</text>
+<text x="380.0" y="212.0" font-size="26" text-anchor="middle">交给可行性检查组件</text>
+<path d="M70,185 L35,185 L35,715" fill="none" stroke="#506580" stroke-width="3"/>
+<rect x="70" y="285" width="620" height="120" rx="14" fill="#FFF0D9" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="318.0" font-size="26" text-anchor="middle">可满足</text>
+<text x="380.0" y="354.0" font-size="26" text-anchor="middle">得到模型中的输入与状态</text>
+<text x="380.0" y="390.0" font-size="26" text-anchor="middle">核对实现、环境与重放证据</text>
+<path d="M35,345.0 L70,345.0" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="445" width="620" height="120" rx="14" fill="#DDF4ED" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="478.0" font-size="26" text-anchor="middle">不可满足</text>
+<text x="380.0" y="514.0" font-size="26" text-anchor="middle">这条路径在当前编码下不可行</text>
+<text x="380.0" y="550.0" font-size="26" text-anchor="middle">提取矛盾原因，细化并重跑</text>
+<path d="M35,505.0 L70,505.0" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="605" width="620" height="120" rx="14" fill="#EEF1F7" stroke="#B9CDDF" stroke-width="1.5"/>
+<text x="380.0" y="638.0" font-size="26" text-anchor="middle">未知或超时</text>
+<text x="380.0" y="674.0" font-size="26" text-anchor="middle">没有得到可行性结论</text>
+<text x="380.0" y="710.0" font-size="26" text-anchor="middle">保留待处理，不能宣称安全</text>
+<path d="M35,665.0 L70,665.0" fill="none" stroke="#506580" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="35" y="840" font-size="24" text-anchor="start">完整抽象证明与预算内没有发现反例必须区分。</text>
+</g></svg>
