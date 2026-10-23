@@ -1,0 +1,24 @@
+{
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "version_output": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "mathlib_required": false,
+  "linux_app_path_compat_used": true,
+  "compatibility_scope": "current-process executable path discovery only; unmodified Lean kernel and libraries",
+  "files": [
+    {
+      "file": "examples/lean/Foundations.lean",
+      "sha256": "fbfe5ade949ecdbef060a2bc05b741c8b81368eb155a0aec0401a6b249ed2381",
+      "exit_code": 0,
+      "passed": true,
+      "output": "2\n'Foundations.and_swap' does not depend on any axioms\n'Foundations.implication_chain' does not depend on any axioms\n'Foundations.twoPerItem_eq_add' does not depend on any axioms\n'Foundations.acceptedCount_le_length' does not depend on any axioms\n"
+    },
+    {
+      "file": "examples/lean/ProgramProofs.lean",
+      "sha256": "fcd71ca2dfbb9dcff9ac5ee4ae09e3f63e15b2cd33dc42c5524bdff24a79247d",
+      "exit_code": 0,
+      "passed": true,
+      "output": "'ProgramProofs.refund_conservation' depends on axioms: [propext]\n'ProgramProofs.at_most_one' depends on axioms: [propext]\n'ProgramProofs.remove_zero_correct' depends on axioms: [propext]\n'ProgramProofs.inc_sound' depends on axioms: [propext, Quot.sound]\n'ProgramProofs.run_sound' depends on axioms: [propext, Quot.sound]\n"
+    }
+  ],
+  "passed": true
+}
