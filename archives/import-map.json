@@ -1,0 +1,109 @@
+{
+  "source_head": "8998fe2d9c28b6193ce167053c4f7b78c79a85c5",
+  "imported_content_head": "1daf0f9e68966a2967059221d4e7ec55a896beef",
+  "reason": "GitHub connector imports tree/commit objects; commit IDs and timestamps differ. Each of the 17 source commit trees was matched exactly before adding this archive. The original bundle preserves the original commit IDs and metadata.",
+  "commits": [
+    {
+      "original_sha": "92084d1ecc94f5ed4eea0fe663a2043c994f075b",
+      "imported_sha": "40e2ffcff76d4d893c00fdb7c33a89901e76f900",
+      "message": "chore: initialize with empty README",
+      "author": "Codex <codex@openai.com> 2026-10-22T21:49:08+08:00"
+    },
+    {
+      "original_sha": "a904c1df7bc70bba394b6abd091899096e23b284",
+      "imported_sha": "c38b3e3f5c6e545a801eb058b70c3e720af38b21",
+      "message": "docs: plan six parts and 36 chapters before parallel authoring",
+      "author": "Codex <codex@openai.com> 2026-10-22T21:51:40+08:00"
+    },
+    {
+      "original_sha": "679fff082051d431a341c151414083bd2ea57d01",
+      "imported_sha": "be56c71d6948f7a000604d3bcb6b1797cb1f629b",
+      "message": "docs: add reading routes, glossary, visual map and reproducible checks",
+      "author": "Codex <codex@openai.com> 2026-10-22T21:56:25+08:00"
+    },
+    {
+      "original_sha": "af2917d4f84e9dd854e020cedbfec0ad9943819f",
+      "imported_sha": "3e3d023cb9d4f75fbe3be966e65210bb4d29a04b",
+      "message": "book: explain program representations and aliasing with worked diagrams",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:04:03+08:00"
+    },
+    {
+      "original_sha": "e64f22a4d494c305366cc746f0f0bdd9a06e4fda",
+      "imported_sha": "0c860f28e8abe9be89bbc9015168f6ec43412070",
+      "message": "book: connect execution evidence, symbolic reasoning and verification",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:05:37+08:00"
+    },
+    {
+      "original_sha": "d155593d165d78c44ef0fbbcba77aed034ad5955",
+      "imported_sha": "ca4bc60071af9c4ccdba747ceff83d0c3a26294f",
+      "message": "book: establish language semantics, runtime models and correctness boundaries",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:08:53+08:00"
+    },
+    {
+      "original_sha": "c5d264ca0ee6ba644ad30df6cc61f8d830aa02f6",
+      "imported_sha": "67208cd37132c0f04c9e157270e10c940a11b968",
+      "message": "book: connect CPU and GPU execution, reverse engineering and performance",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:08:54+08:00"
+    },
+    {
+      "original_sha": "d0bc8bb99dd1d1dac8993ec8cf734d2b05c27c3a",
+      "imported_sha": "edfe0e92f6a0f0a0f0ea6603bfb6d1424a556d88",
+      "message": "book: derive static analyses with fixpoints, summaries and query rules",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:10:27+08:00"
+    },
+    {
+      "original_sha": "6a76d4fb416d11d7eccf266883261a3403092595",
+      "imported_sha": "fdf81b493f366b2b878c6c795a2e0257622563aa",
+      "message": "book: add applications, AI evidence, evaluation and a tested teaching analyzer",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:10:27+08:00"
+    },
+    {
+      "original_sha": "978bffb305de489b2ec5a4dcdf5bbe79e5b2e47c",
+      "imported_sha": "3037698897f411508d19bb3ba348fca20ca427bd",
+      "message": "review: reconcile six peer reviews and verify integrated manuscript",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:13:25+08:00"
+    },
+    {
+      "original_sha": "c430984646ffa6b9b238ea94254c8a58676a8cce",
+      "imported_sha": "91d3404f5bfed4e172a59e4545f034ff836fe66a",
+      "message": "plan: extend scope with proofs, relational reasoning and engineering verification",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:40:09+08:00"
+    },
+    {
+      "original_sha": "526606bbd7156ced6c2a018afa3ffc0bbef125a1",
+      "imported_sha": "542a63ae72ad76fb6aad95c71ef17004f602f5ab",
+      "message": "book: add machine-checked Lean proofs and relational correctness chapters",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:59:50+08:00"
+    },
+    {
+      "original_sha": "5e75dbc5d0fbd532ee068a64be2729fd08c64bce",
+      "imported_sha": "04f157862591ab8c1b0483710cd7fd5a2961e6ca",
+      "message": "book: deepen data models, refinement and engineering verification loops",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:59:50+08:00"
+    },
+    {
+      "original_sha": "9d6ce2e5ed949ec4f8a41d2133d83c413c489f01",
+      "imported_sha": "1e2fe9d89a6311c6d805a90add59e8462c4de4cb",
+      "message": "review: integrate 51 chapters, source identities and reproducible verification",
+      "author": "Codex <codex@openai.com> 2026-10-22T22:59:51+08:00"
+    },
+    {
+      "original_sha": "80f6daa9dcd4015e36ddb1e9d0af05c319d45552",
+      "imported_sha": "0a14aea65a43dc1f1b983007746b9adb13881a01",
+      "message": "plan: integrate Rocq, compiler semantics and C verification case studies",
+      "author": "Codex <codex@openai.com> 2026-10-23T09:31:45+08:00"
+    },
+    {
+      "original_sha": "93b12828dc3272118e21848444a89faa7f4b5355",
+      "imported_sha": "254882ebaa8baba5d800961343f8a3c5d20132cd",
+      "message": "book: add Rocq foundations, Lean comparison and CompCert VST case studies",
+      "author": "Codex <codex@openai.com> 2026-10-23T09:49:06+08:00"
+    },
+    {
+      "original_sha": "8998fe2d9c28b6193ce167053c4f7b78c79a85c5",
+      "imported_sha": "1daf0f9e68966a2967059221d4e7ec55a896beef",
+      "message": "verify: check three Rocq models and integrate the 55 chapter edition",
+      "author": "Codex <codex@openai.com> 2026-10-23T09:55:30+08:00"
+    }
+  ]
+}

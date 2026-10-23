@@ -111,3 +111,7 @@ python3 scripts/build_book.py
 构建输出合并 Markdown 和完整工程包，资源保留相对路径。工程包内的 build/history.bundle 可用 `git clone build/history.bundle restored-book` 恢复完整已提交历史；直接阅读无需恢复 Git。
 
 本次交付为 Markdown、SVG/封面与可运行示例；网页和 PDF 可复用相同主稿另行发布。
+
+## 原始版本历史
+
+本仓库保留分阶段写作与审校提交，原始提交对象另存于[历史归档](archives/README.md)，可恢复原始 SHA 与完整元数据。
