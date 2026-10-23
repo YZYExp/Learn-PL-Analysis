@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4D6480"/></marker></defs><rect width="1000" height="600" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="45" y="55" font-size="30" font-weight="bold">证明义务：赋值代入与循环归纳</text>
+<text x="45" y="94" font-size="21">数学整数；循环示例 i = n，while i &gt; 0: i = i − 1</text>
+<rect x="45" y="145" width="910" height="80" rx="12" fill="#E5EFFF" stroke="#BCCDE0"/>
+<text x="500.0" y="177.5" font-size="22" fill="#16324F" text-anchor="middle">赋值 remaining := balance − a</text>
+<text x="500.0" y="208.5" font-size="22" fill="#16324F" text-anchor="middle">目标 remaining ≥ 0 → 所需前提 balance − a ≥ 0</text>
+<rect x="45" y="310" width="270" height="135" rx="12" fill="#E5EFFF" stroke="#BCCDE0"/>
+<text x="180.0" y="354.5" font-size="22" fill="#16324F" text-anchor="middle">初始化</text>
+<text x="180.0" y="385.5" font-size="22" fill="#16324F" text-anchor="middle">i = n 且 n ≥ 0</text>
+<text x="180.0" y="416.5" font-size="22" fill="#16324F" text-anchor="middle">建立 0 ≤ i ≤ n</text>
+<rect x="365" y="310" width="270" height="135" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="500.0" y="354.5" font-size="22" fill="#16324F" text-anchor="middle">保持</text>
+<text x="500.0" y="385.5" font-size="22" fill="#16324F" text-anchor="middle">0 &lt; i ≤ n</text>
+<text x="500.0" y="416.5" font-size="22" fill="#16324F" text-anchor="middle">减一后仍有 0 ≤ i ≤ n</text>
+<rect x="685" y="310" width="270" height="135" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="820.0" y="354.5" font-size="22" fill="#16324F" text-anchor="middle">退出</text>
+<text x="820.0" y="385.5" font-size="22" fill="#16324F" text-anchor="middle">0 ≤ i ≤ n 且 i ≤ 0</text>
+<text x="820.0" y="416.5" font-size="22" fill="#16324F" text-anchor="middle">推出 i = 0</text>
+<path d="M315,375 L365,375" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M635,375 L685,375" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="45" y="561" font-size="20" fill="#16324F" text-anchor="start">终止性另证：非负整数 i 每轮严格下降，不能无限下降。</text>
+</g></svg>

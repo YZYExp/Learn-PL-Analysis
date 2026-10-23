@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4D6480"/></marker></defs><rect width="1000" height="600" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="45" y="55" font-size="30" font-weight="bold">地址有效性：访问旁边的元数据</text>
+<text x="45" y="94" font-size="21">教学模型：八字节用户区域；两侧为不可访问边界</text>
+<rect x="80" y="185" width="75" height="85" rx="12" fill="#FFF0D9" stroke="#BCCDE0"/>
+<text x="117.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">边界</text>
+<rect x="164" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="201.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">0</text>
+<rect x="248" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="285.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">1</text>
+<rect x="332" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="369.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">2</text>
+<rect x="416" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="453.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">3</text>
+<rect x="500" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="537.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">4</text>
+<rect x="584" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="621.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">5</text>
+<rect x="668" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="705.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">6</text>
+<rect x="752" y="185" width="75" height="85" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="789.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">7</text>
+<rect x="836" y="185" width="75" height="85" rx="12" fill="#FFF0D9" stroke="#BCCDE0"/>
+<text x="873.5" y="235.5" font-size="22" fill="#16324F" text-anchor="middle">边界</text>
+<text x="80" y="320" font-size="24" fill="#16324F" text-anchor="start">分配后：用户区域允许访问；边界区域拒绝访问。</text>
+<path d="M500,345 L500,395" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="508.0" y="362.0" font-size="20" fill="#16324F" text-anchor="start">释放</text>
+<rect x="164" y="415" width="663" height="80" rx="12" fill="#FFF0D9" stroke="#BCCDE0"/>
+<text x="495.5" y="463.0" font-size="22" fill="#16324F" text-anchor="middle">原用户区域被标记为不可访问</text>
+<text x="45" y="561" font-size="20" fill="#16324F" text-anchor="start">真实检测还需考虑访问宽度、对齐、元数据编码与未插桩边界。</text>
+</g></svg>

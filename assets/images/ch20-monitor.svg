@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4D6480"/></marker></defs><rect width="1000" height="600" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="45" y="55" font-size="30" font-weight="bold">退款成功事件的监测状态机</text>
+<text x="45" y="94" font-size="21">假设：每个订单只允许一次全额成功退款；其他事件不改变状态</text>
+<rect x="50" y="220" width="230" height="130" rx="12" fill="#E5EFFF" stroke="#BCCDE0"/>
+<text x="165.0" y="277.5" font-size="22" fill="#16324F" text-anchor="middle">paid</text>
+<text x="165.0" y="308.5" font-size="22" fill="#16324F" text-anchor="middle">尚无成功事件</text>
+<rect x="385" y="220" width="230" height="130" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="500.0" y="277.5" font-size="22" fill="#16324F" text-anchor="middle">refunded</text>
+<text x="500.0" y="308.5" font-size="22" fill="#16324F" text-anchor="middle">已有一次成功</text>
+<rect x="720" y="220" width="230" height="130" rx="12" fill="#FFF0D9" stroke="#BCCDE0"/>
+<text x="835.0" y="277.5" font-size="22" fill="#16324F" text-anchor="middle">violation</text>
+<text x="835.0" y="308.5" font-size="22" fill="#16324F" text-anchor="middle">重复成功</text>
+<path d="M280,280 L385,280" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M615,280 L720,280" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="330" y="200" font-size="21" fill="#16324F" text-anchor="middle">成功事件</text>
+<text x="665" y="200" font-size="21" fill="#16324F" text-anchor="middle">成功事件</text>
+<rect x="210" y="415" width="580" height="70" rx="12" fill="#EDF0F5" stroke="#BCCDE0"/>
+<text x="500.0" y="458.0" font-size="22" fill="#16324F" text-anchor="middle">按订单身份分开维护；不能混用不同订单的历史</text>
+<text x="45" y="561" font-size="20" fill="#16324F" text-anchor="start">请求、超时、确认成功是不同事件；监测器必须明确事件语义。</text>
+</g></svg>

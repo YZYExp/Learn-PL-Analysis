@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4D6480"/></marker></defs><rect width="1000" height="600" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="45" y="55" font-size="30" font-weight="bold">记录重放固定轨迹，调度探索寻找其他轨迹</text>
+<text x="45" y="94" font-size="21">先明确记录边界：进程、外部服务、持久状态与硬件支持</text>
+<rect x="50" y="165" width="250" height="100" rx="12" fill="#E5EFFF" stroke="#BCCDE0"/>
+<text x="175.0" y="207.5" font-size="22" fill="#16324F" text-anchor="middle">一次实际失败</text>
+<text x="175.0" y="238.5" font-size="22" fill="#16324F" text-anchor="middle">输入 + 环境事件</text>
+<rect x="390" y="165" width="220" height="100" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="500.0" y="207.5" font-size="22" fill="#16324F" text-anchor="middle">记录</text>
+<text x="500.0" y="238.5" font-size="22" fill="#16324F" text-anchor="middle">非确定性证据</text>
+<rect x="700" y="165" width="250" height="100" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="825.0" y="207.5" font-size="22" fill="#16324F" text-anchor="middle">确定性重放</text>
+<text x="825.0" y="238.5" font-size="22" fill="#16324F" text-anchor="middle">反复定位同一失败</text>
+<path d="M300,215 L390,215" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M610,215 L700,215" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="80" y="385" width="370" height="95" rx="12" fill="#FFF0D9" stroke="#BCCDE0"/>
+<text x="265.0" y="425.0" font-size="22" fill="#16324F" text-anchor="middle">调度探索</text>
+<text x="265.0" y="456.0" font-size="22" fill="#16324F" text-anchor="middle">枚举或选择不同事件顺序</text>
+<rect x="550" y="385" width="370" height="95" rx="12" fill="#FFF0D9" stroke="#BCCDE0"/>
+<text x="735.0" y="425.0" font-size="22" fill="#16324F" text-anchor="middle">新的可能轨迹</text>
+<text x="735.0" y="456.0" font-size="22" fill="#16324F" text-anchor="middle">需要重新检查目标性质</text>
+<path d="M450,430 L550,430" fill="none" stroke="#4D6480" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="45" y="561" font-size="20" fill="#16324F" text-anchor="start">重放成功说明旧轨迹可重现；它不代表其他调度已经检查。</text>
+</g></svg>

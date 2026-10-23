@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4D6480"/></marker></defs><rect width="1000" height="600" fill="#FAFCFF"/><g font-family="Noto Sans CJK SC, sans-serif" fill="#16324F">
+<text x="45" y="55" font-size="30" font-weight="bold">符号执行中的三种预算选择</text>
+<text x="45" y="94" font-size="21">减少独立状态，不一定减少每次求解的难度</text>
+<text x="180" y="170" font-size="25" fill="#16324F" text-anchor="middle">保留分支</text>
+<rect x="45" y="210" width="270" height="220" rx="12" fill="#E5EFFF" stroke="#BCCDE0"/>
+<text x="180.0" y="297.0" font-size="22" fill="#16324F" text-anchor="middle">多个简单状态</text>
+<text x="180.0" y="328.0" font-size="22" fill="#16324F" text-anchor="middle">搜索队列增长</text>
+<text x="180.0" y="359.0" font-size="22" fill="#16324F" text-anchor="middle">每条保留路径条件</text>
+<text x="500" y="170" font-size="25" fill="#16324F" text-anchor="middle">合并状态</text>
+<rect x="365" y="210" width="270" height="220" rx="12" fill="#DDF3EE" stroke="#BCCDE0"/>
+<text x="500.0" y="297.0" font-size="22" fill="#16324F" text-anchor="middle">更少的状态</text>
+<text x="500.0" y="328.0" font-size="22" fill="#16324F" text-anchor="middle">条件表达式变大</text>
+<text x="500.0" y="359.0" font-size="22" fill="#16324F" text-anchor="middle">求解可能更困难</text>
+<text x="820" y="170" font-size="25" fill="#16324F" text-anchor="middle">限制展开</text>
+<rect x="685" y="210" width="270" height="220" rx="12" fill="#FFF0D9" stroke="#BCCDE0"/>
+<text x="820.0" y="297.0" font-size="22" fill="#16324F" text-anchor="middle">达到深度即停止</text>
+<text x="820.0" y="328.0" font-size="22" fill="#16324F" text-anchor="middle">只获得有界结果</text>
+<text x="820.0" y="359.0" font-size="22" fill="#16324F" text-anchor="middle">须报告未探索部分</text>
+<text x="45" y="561" font-size="20" fill="#16324F" text-anchor="start">预算、超时和模型简化必须进入报告；它们不是无错误证明。</text>
+</g></svg>
