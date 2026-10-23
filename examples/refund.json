@@ -1,0 +1,12 @@
+{
+  "entry": "paid",
+  "nodes": {
+    "paid": {"op": "const", "dst": "paid_cents", "value": 100, "next": "choice"},
+    "choice": {"op": "input", "dst": "retry", "next": "fork"},
+    "fork": {"op": "branch", "cond": "retry", "true": "first", "false": "repeat"},
+    "first": {"op": "const", "dst": "count", "value": 1, "next": "cost"},
+    "repeat": {"op": "const", "dst": "count", "value": 0, "next": "cost"},
+    "cost": {"op": "div", "dst": "average", "a": "paid_cents", "b": "count", "next": "done"},
+    "done": {"op": "stop"}
+  }
+}
