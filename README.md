@@ -63,6 +63,7 @@
 ## 附录与复现
 
 - [术语速查](appendices/glossary.md)
+- [资料索引](references/source-index.md)
 - [审校记录](references/review.md)
 - [教学分析器](examples/)
 

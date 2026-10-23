@@ -11,15 +11,22 @@ if not check():
 book = json.loads((ROOT / 'book.json').read_text())
 build = ROOT / 'build'
 blocks = ['# ' + book['title'], book['description'], '![封面：程序结构、运行时与机器行为的视觉隐喻](../' + book['cover'] + ')\n\n封面为 AI 教学插画，正文精确关系以 SVG 图解为准。']
+contents = ['## 目录', '以下链接可打开独立章节；也可继续向下通读。']
+for part in range(1, 7):
+    chapters = [c for c in book['chapters'] if c['part'] == part]
+    contents += ['', '### 第 ' + str(part) + ' 篇 ' + chapters[0]['part_title'], '']
+    contents += [f'- [{c["id"][2:]}　{c["title"]}](../{c["source"]})' for c in chapters]
+blocks.append('\n'.join(contents))
 for path in [ROOT / 'appendices/reading-guide.md'] + [ROOT / c['source'] for c in book['chapters']] + [ROOT / 'appendices/glossary.md']:
     text = path.read_text()
     def relink(match):
         prefix, url = match.groups()
         if re.match(r'https?://|mailto:|#', url):
             return match.group(0)
-        local = (path.parent / url.split('#')[0]).resolve()
+        base, sep, fragment = url.partition('#')
+        local = (path.parent / base).resolve()
         if local.is_relative_to(ROOT):
-            return prefix + '../' + str(local.relative_to(ROOT)) + ')'
+            return prefix + '../' + str(local.relative_to(ROOT)) + (sep + fragment if sep else '') + ')'
         return match.group(0)
     blocks.append(re.sub(r'(\]\()([^)]+)\)', relink, text))
 (build / '程序分析图解.md').write_text('\n\n---\n\n'.join(blocks) + '\n')
