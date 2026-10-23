@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-10-23T01:53:07.260061+00:00",
+  "command": [
+    "opam",
+    "list",
+    "--switch=book-rocq",
+    "--installed",
+    "--columns=name,version",
+    "--color=never"
+  ],
+  "exit_code": 0,
+  "packages": {
+    "base-bigarray": "base",
+    "base-threads": "base",
+    "base-unix": "base",
+    "conf-gmp": "5",
+    "conf-linux-libc-dev": "0",
+    "conf-pkg-config": "5",
+    "dune": "3.23.1",
+    "ocaml": "4.14.1",
+    "ocaml-config": "2",
+    "ocaml-system": "4.14.1",
+    "ocamlfind": "1.9.8",
+    "rocq-core": "9.0.0",
+    "rocq-prover": "9.0.0",
+    "rocq-runtime": "9.0.0",
+    "rocq-stdlib": "9.0.0",
+    "zarith": "1.14"
+  },
+  "output": "# Packages matching: installed\n# Name              # Version\nbase-bigarray       base\nbase-threads        base\nbase-unix           base\nconf-gmp            5\nconf-linux-libc-dev 0\nconf-pkg-config     5\ndune                3.23.1\nocaml               4.14.1\nocaml-config        2\nocaml-system        4.14.1\nocamlfind           1.9.8\nrocq-core           9.0.0\nrocq-prover         9.0.0\nrocq-runtime        9.0.0\nrocq-stdlib         9.0.0\nzarith              1.14\n",
+  "environment_note": "User-space OCaml 4.14.1 and opam packages; Rocq kernel and Stdlib unmodified. Task-local compiler launchers only relocate OCaml executable/library paths."
+}

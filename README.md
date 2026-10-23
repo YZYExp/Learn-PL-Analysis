@@ -47,52 +47,58 @@
 - [25　形式化方法的地图与规格细化](chapters/37.md)
 - [26　命题、类型与证明助手](chapters/38.md)
 - [27　Lean 实作：从定理陈述到内核检查](chapters/39.md)
-- [28　证明程序满足规格：归纳、契约与状态转换](chapters/40.md)
-- [29　程序等价、精化与编译变换验证](chapters/41.md)
-- [30　证明分析器与理解可信计算基础](chapters/42.md)
+- [28　Rocq 实作：定义、归纳与内核检查](chapters/52.md)
+- [29　Lean 与 Rocq 同题对照：证据、目标与自动化](chapters/53.md)
+- [30　证明程序满足规格：归纳、契约与状态转换](chapters/40.md)
+- [31　程序等价、精化与编译变换验证](chapters/41.md)
+- [32　CompCert 案例：程序语义、模拟与编译正确性](chapters/54.md)
+- [33　VST 案例：C 程序、内存资源与验证责任](chapters/55.md)
+- [34　证明分析器与理解可信计算基础](chapters/42.md)
 
 ## 第 6 篇 机器与异构
 
-- [31　CPU、ABI 与机器级程序行为](chapters/25.md)
-- [32　内存模型、原子操作与可见性](chapters/26.md)
-- [33　逆向、反汇编与反编译](chapters/27.md)
-- [34　GPU：SIMT、内存与同步](chapters/28.md)
-- [35　性能分析：CPU、GPU 与数据搬运](chapters/29.md)
-- [36　跨语言、FFI 与动态机制](chapters/30.md)
+- [35　CPU、ABI 与机器级程序行为](chapters/25.md)
+- [36　内存模型、原子操作与可见性](chapters/26.md)
+- [37　逆向、反汇编与反编译](chapters/27.md)
+- [38　GPU：SIMT、内存与同步](chapters/28.md)
+- [39　性能分析：CPU、GPU 与数据搬运](chapters/29.md)
+- [40　跨语言、FFI 与动态机制](chapters/30.md)
 
 ## 第 7 篇 数据、内存与资源的深入推理
 
-- [37　形状分析、分离逻辑与内存所有权](chapters/43.md)
-- [38　字符串、容器与数据结构分析](chapters/44.md)
-- [39　终止性、递归与资源复杂度](chapters/45.md)
-- [40　信息流、非干扰与隐私边界](chapters/47.md)
-- [41　浮点语义、数值误差与稳定性](chapters/48.md)
+- [41　形状分析、分离逻辑与内存所有权](chapters/43.md)
+- [42　字符串、容器与数据结构分析](chapters/44.md)
+- [43　终止性、递归与资源复杂度](chapters/45.md)
+- [44　信息流、非干扰与隐私边界](chapters/47.md)
+- [45　浮点语义、数值误差与稳定性](chapters/48.md)
 
 ## 第 8 篇 分析细化与工程闭环
 
-- [42　反例解释、可行性检查与抽象细化](chapters/46.md)
-- [43　分布式、持久化与崩溃恢复](chapters/49.md)
-- [44　增量分析、大型工程与摘要失效](chapters/50.md)
-- [45　程序合成、自动修复与验证闭环](chapters/51.md)
+- [46　反例解释、可行性检查与抽象细化](chapters/46.md)
+- [47　分布式、持久化与崩溃恢复](chapters/49.md)
+- [48　增量分析、大型工程与摘要失效](chapters/50.md)
+- [49　程序合成、自动修复与验证闭环](chapters/51.md)
 
 ## 第 9 篇 应用与构建
 
-- [46　缺陷、安全性质与威胁模型](chapters/31.md)
-- [47　优化、维护与变更影响分析](chapters/32.md)
-- [48　代表工具与分析架构](chapters/33.md)
-- [49　AI 辅助分析与证据管理](chapters/34.md)
-- [50　评估分析器与实验设计](chapters/35.md)
-- [51　搭建一个可运行的教学分析器](chapters/36.md)
+- [50　缺陷、安全性质与威胁模型](chapters/31.md)
+- [51　优化、维护与变更影响分析](chapters/32.md)
+- [52　代表工具与分析架构](chapters/33.md)
+- [53　AI 辅助分析与证据管理](chapters/34.md)
+- [54　评估分析器与实验设计](chapters/35.md)
+- [55　搭建一个可运行的教学分析器](chapters/36.md)
 
 ## 附录与复现
 
 - [术语速查](appendices/glossary.md)
 - [延伸领域地图](appendices/frontiers.md)
 - [资料索引](references/source-index.md)
-- [扩展版审校记录](references/review-expanded.md)
+- [Rocq扩展版审校记录](references/review-rocq.md)
+- [前版审校记录（历史）](references/review-expanded.md)
 - [展示编号与稳定身份对照](references/chapter-map.md)
 - [教学分析器](examples/README.md)
 - [Lean 证明文件与检查说明](examples/lean/README.md)
+- [Rocq 证明文件与检查说明](examples/rocq/README.md)
 
 ```bash
 python3 scripts/check_book.py
@@ -100,7 +106,7 @@ python3 -m unittest discover -s examples -p "test*.py"
 python3 scripts/build_book.py
 ```
 
-构建与内容检查仅需 Python 3.10+ 标准库；可选图像预览使用 Pillow 与 Inkscape，或 Pillow 与 PyMuPDF。Lean 文件另按所附说明使用固定版本检查，不是普通书稿构建的必装依赖。
+构建与内容检查仅需 Python 3.10+ 标准库；可选图像预览使用 Pillow 与 Inkscape，或 Pillow 与 PyMuPDF。Lean 与 Rocq 文件各按所附说明使用固定版本检查，不是普通书稿构建的必装依赖。
 
 构建输出合并 Markdown 和完整工程包，资源保留相对路径。工程包内的 build/history.bundle 可用 `git clone build/history.bundle restored-book` 恢复完整已提交历史；直接阅读无需恢复 Git。
 

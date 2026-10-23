@@ -1,0 +1,175 @@
+{
+  "toolchain": "rocq-core/rocq-runtime/rocq-stdlib:9.0.0",
+  "required_package_versions": {
+    "rocq-core": "9.0.0",
+    "rocq-runtime": "9.0.0",
+    "rocq-stdlib": "9.0.0"
+  },
+  "package_installation_evidence": {
+    "file": "examples/rocq/installation.json",
+    "sha256": "4974c467a99d11686c95ae52f1078174de0e406c53f4cea5cc814e76c27c53af",
+    "required_versions_matched": true
+  },
+  "package_version_note": "The CLI version is checked below. Exact package installation inventory is separate evidence; package versions are not inferred from source text.",
+  "required_version": "9.0.0",
+  "checked_at_utc": "2026-10-23T01:53:32.506956+00:00",
+  "check_scope": "compilation_Print_Assumptions_and_independent_rocq_check",
+  "stdlib_only": true,
+  "third_party_projects_built": [],
+  "version_check": {
+    "command": [
+      "/workspace/scratch/e80ec5415df1/rocq-opam/book-rocq/bin/rocq",
+      "--version"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "stdout": "The Rocq Prover, version 9.0.0\ncompiled with OCaml 4.14.1\n",
+    "stderr": "",
+    "output": "The Rocq Prover, version 9.0.0\ncompiled with OCaml 4.14.1\n",
+    "passed": true
+  },
+  "version_output": "The Rocq Prover, version 9.0.0\ncompiled with OCaml 4.14.1",
+  "staging_directory": "build/rocq-check",
+  "logical_prefix": "BookRocq",
+  "independent_kernel_recheck": {
+    "performed": true,
+    "files_checked": 3,
+    "passed": true,
+    "scope": "rocq check on all three staged BookRocq modules; no -admit/-norec flags"
+  },
+  "files": [
+    {
+      "file": "examples/rocq/Foundations.v",
+      "sha256": "876b13ba557cf8f702b1a5aa61d8c1abe2095e9f9985378ad53395c3802a26e1",
+      "staged_file": "build/rocq-check/Foundations.v",
+      "command": [
+        "/workspace/scratch/e80ec5415df1/rocq-opam/book-rocq/bin/rocq",
+        "compile",
+        "-q",
+        "-Q",
+        "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check",
+        "BookRocq",
+        "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check/Foundations.v"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "     = 2\n     : nat\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\n",
+      "stderr": "",
+      "output": "     = 2\n     : nat\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\n",
+      "expected_closed_count": 5,
+      "observed_closed_count": 5,
+      "axioms_reported": false,
+      "error_diagnostic_detected": false,
+      "compiled_artifact_exists": true,
+      "compile_passed": true,
+      "kernel_recheck": {
+        "command": [
+          "/workspace/scratch/e80ec5415df1/rocq-opam/book-rocq/bin/rocq",
+          "check",
+          "-silent",
+          "-Q",
+          "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check",
+          "BookRocq",
+          "BookRocq.Foundations"
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "",
+        "stderr": "",
+        "output": "",
+        "performed": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "file": "examples/rocq/CompilerModel.v",
+      "sha256": "a9c4b676e804a10d132049fe746eef0ea9c4e8908c075fe9f92033fbec3fb8e3",
+      "staged_file": "build/rocq-check/CompilerModel.v",
+      "command": [
+        "/workspace/scratch/e80ec5415df1/rocq-opam/book-rocq/bin/rocq",
+        "compile",
+        "-q",
+        "-Q",
+        "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check",
+        "BookRocq",
+        "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check/CompilerModel.v"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "Closed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\n",
+      "stderr": "",
+      "output": "Closed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\n",
+      "expected_closed_count": 5,
+      "observed_closed_count": 5,
+      "axioms_reported": false,
+      "error_diagnostic_detected": false,
+      "compiled_artifact_exists": true,
+      "compile_passed": true,
+      "kernel_recheck": {
+        "command": [
+          "/workspace/scratch/e80ec5415df1/rocq-opam/book-rocq/bin/rocq",
+          "check",
+          "-silent",
+          "-Q",
+          "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check",
+          "BookRocq",
+          "BookRocq.CompilerModel"
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "",
+        "stderr": "",
+        "output": "",
+        "performed": true,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "file": "examples/rocq/HeapModel.v",
+      "sha256": "2f8e509f9d1f559828f17778a469a2eb8f8aae7d0cd87be7c19e759cc5ef9900",
+      "staged_file": "build/rocq-check/HeapModel.v",
+      "command": [
+        "/workspace/scratch/e80ec5415df1/rocq-opam/book-rocq/bin/rocq",
+        "compile",
+        "-q",
+        "-Q",
+        "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check",
+        "BookRocq",
+        "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check/HeapModel.v"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "Closed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\n",
+      "stderr": "File \"/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check/HeapModel.v\", line 1, characters 0-46:\nWarning: Alternatives to Fin.t are available, see\n<https://github.com/coq/stdlib/blob/master/theories/Vectors/Fin.v>.\n[warn-library-file-stdlib-vector,stdlib-vector,warn-library-file,user-warn,default]\n",
+      "output": "Closed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\nClosed under the global context\n\nFile \"/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check/HeapModel.v\", line 1, characters 0-46:\nWarning: Alternatives to Fin.t are available, see\n<https://github.com/coq/stdlib/blob/master/theories/Vectors/Fin.v>.\n[warn-library-file-stdlib-vector,stdlib-vector,warn-library-file,user-warn,default]\n",
+      "expected_closed_count": 6,
+      "observed_closed_count": 6,
+      "axioms_reported": false,
+      "error_diagnostic_detected": false,
+      "compiled_artifact_exists": true,
+      "compile_passed": true,
+      "kernel_recheck": {
+        "command": [
+          "/workspace/scratch/e80ec5415df1/rocq-opam/book-rocq/bin/rocq",
+          "check",
+          "-silent",
+          "-Q",
+          "/workspace/scratch/e80ec5415df1/program-analysis-book/build/rocq-check",
+          "BookRocq",
+          "BookRocq.HeapModel"
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "stdout": "",
+        "stderr": "",
+        "output": "",
+        "performed": true,
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

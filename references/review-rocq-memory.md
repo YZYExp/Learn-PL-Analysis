@@ -30,3 +30,7 @@ Rocq 9.0.0实际检查结果等待主编提供工具链后补充。目前只有�
 - CompilerModel.v SHA-256：a9c4b676e804a10d132049fe746eef0ea9c4e8908c075fe9f92033fbec3fb8e3。
 
 两文件均无Admitted、admit、自设Axiom或Parameter，包含Print Assumptions。源码无这些标记不替代实际内核检查，后者以运行日志为准。
+
+## 整合后的机器检查
+
+本文上面的待检描述保留审稿时状态。整合后，三份Rocq文件已在9.0.0下编译与独立重查通过；最终源码摘要、实际命令和假设查询见[统一审校记录](review-rocq.md)及[原始检查报告](../examples/rocq/check-results.json)。

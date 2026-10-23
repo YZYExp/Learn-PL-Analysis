@@ -1,6 +1,6 @@
 # 展示编号与稳定身份对照
 
-阅读顺序以目录为准。稳定ID、文件名和URL保留初版身份；本扩展版新增后统一展示章号。初版审稿报告沿用当时编号；扩展审稿报告按稳定ID记录。
+阅读顺序以 `book.json` 的 `number` 为准。本版共55章，形式化篇为展示25—34章；稳定ID、文件名和URL保留身份，新增Rocq专题的稳定ID为52—55。旧审稿报告中的数字按报告注明的版本或稳定ID解释，不直接当作本版展示章号。
 
 | 展示章号 | 稳定ID | 源文件 | 章节 |
 |---|---|---|---|
@@ -31,27 +31,31 @@
 | 25 | ch37 | [chapters/37.md](../chapters/37.md) | 形式化方法的地图与规格细化 |
 | 26 | ch38 | [chapters/38.md](../chapters/38.md) | 命题、类型与证明助手 |
 | 27 | ch39 | [chapters/39.md](../chapters/39.md) | Lean 实作：从定理陈述到内核检查 |
-| 28 | ch40 | [chapters/40.md](../chapters/40.md) | 证明程序满足规格：归纳、契约与状态转换 |
-| 29 | ch41 | [chapters/41.md](../chapters/41.md) | 程序等价、精化与编译变换验证 |
-| 30 | ch42 | [chapters/42.md](../chapters/42.md) | 证明分析器与理解可信计算基础 |
-| 31 | ch25 | [chapters/25.md](../chapters/25.md) | CPU、ABI 与机器级程序行为 |
-| 32 | ch26 | [chapters/26.md](../chapters/26.md) | 内存模型、原子操作与可见性 |
-| 33 | ch27 | [chapters/27.md](../chapters/27.md) | 逆向、反汇编与反编译 |
-| 34 | ch28 | [chapters/28.md](../chapters/28.md) | GPU：SIMT、内存与同步 |
-| 35 | ch29 | [chapters/29.md](../chapters/29.md) | 性能分析：CPU、GPU 与数据搬运 |
-| 36 | ch30 | [chapters/30.md](../chapters/30.md) | 跨语言、FFI 与动态机制 |
-| 37 | ch43 | [chapters/43.md](../chapters/43.md) | 形状分析、分离逻辑与内存所有权 |
-| 38 | ch44 | [chapters/44.md](../chapters/44.md) | 字符串、容器与数据结构分析 |
-| 39 | ch45 | [chapters/45.md](../chapters/45.md) | 终止性、递归与资源复杂度 |
-| 40 | ch47 | [chapters/47.md](../chapters/47.md) | 信息流、非干扰与隐私边界 |
-| 41 | ch48 | [chapters/48.md](../chapters/48.md) | 浮点语义、数值误差与稳定性 |
-| 42 | ch46 | [chapters/46.md](../chapters/46.md) | 反例解释、可行性检查与抽象细化 |
-| 43 | ch49 | [chapters/49.md](../chapters/49.md) | 分布式、持久化与崩溃恢复 |
-| 44 | ch50 | [chapters/50.md](../chapters/50.md) | 增量分析、大型工程与摘要失效 |
-| 45 | ch51 | [chapters/51.md](../chapters/51.md) | 程序合成、自动修复与验证闭环 |
-| 46 | ch31 | [chapters/31.md](../chapters/31.md) | 缺陷、安全性质与威胁模型 |
-| 47 | ch32 | [chapters/32.md](../chapters/32.md) | 优化、维护与变更影响分析 |
-| 48 | ch33 | [chapters/33.md](../chapters/33.md) | 代表工具与分析架构 |
-| 49 | ch34 | [chapters/34.md](../chapters/34.md) | AI 辅助分析与证据管理 |
-| 50 | ch35 | [chapters/35.md](../chapters/35.md) | 评估分析器与实验设计 |
-| 51 | ch36 | [chapters/36.md](../chapters/36.md) | 搭建一个可运行的教学分析器 |
+| 28 | ch52 | [chapters/52.md](../chapters/52.md) | Rocq 实作：定义、归纳与内核检查 |
+| 29 | ch53 | [chapters/53.md](../chapters/53.md) | Lean 与 Rocq 同题对照：证据、目标与自动化 |
+| 30 | ch40 | [chapters/40.md](../chapters/40.md) | 证明程序满足规格：归纳、契约与状态转换 |
+| 31 | ch41 | [chapters/41.md](../chapters/41.md) | 程序等价、精化与编译变换验证 |
+| 32 | ch54 | [chapters/54.md](../chapters/54.md) | CompCert 案例：程序语义、模拟与编译正确性 |
+| 33 | ch55 | [chapters/55.md](../chapters/55.md) | VST 案例：C 程序、内存资源与验证责任 |
+| 34 | ch42 | [chapters/42.md](../chapters/42.md) | 证明分析器与理解可信计算基础 |
+| 35 | ch25 | [chapters/25.md](../chapters/25.md) | CPU、ABI 与机器级程序行为 |
+| 36 | ch26 | [chapters/26.md](../chapters/26.md) | 内存模型、原子操作与可见性 |
+| 37 | ch27 | [chapters/27.md](../chapters/27.md) | 逆向、反汇编与反编译 |
+| 38 | ch28 | [chapters/28.md](../chapters/28.md) | GPU：SIMT、内存与同步 |
+| 39 | ch29 | [chapters/29.md](../chapters/29.md) | 性能分析：CPU、GPU 与数据搬运 |
+| 40 | ch30 | [chapters/30.md](../chapters/30.md) | 跨语言、FFI 与动态机制 |
+| 41 | ch43 | [chapters/43.md](../chapters/43.md) | 形状分析、分离逻辑与内存所有权 |
+| 42 | ch44 | [chapters/44.md](../chapters/44.md) | 字符串、容器与数据结构分析 |
+| 43 | ch45 | [chapters/45.md](../chapters/45.md) | 终止性、递归与资源复杂度 |
+| 44 | ch47 | [chapters/47.md](../chapters/47.md) | 信息流、非干扰与隐私边界 |
+| 45 | ch48 | [chapters/48.md](../chapters/48.md) | 浮点语义、数值误差与稳定性 |
+| 46 | ch46 | [chapters/46.md](../chapters/46.md) | 反例解释、可行性检查与抽象细化 |
+| 47 | ch49 | [chapters/49.md](../chapters/49.md) | 分布式、持久化与崩溃恢复 |
+| 48 | ch50 | [chapters/50.md](../chapters/50.md) | 增量分析、大型工程与摘要失效 |
+| 49 | ch51 | [chapters/51.md](../chapters/51.md) | 程序合成、自动修复与验证闭环 |
+| 50 | ch31 | [chapters/31.md](../chapters/31.md) | 缺陷、安全性质与威胁模型 |
+| 51 | ch32 | [chapters/32.md](../chapters/32.md) | 优化、维护与变更影响分析 |
+| 52 | ch33 | [chapters/33.md](../chapters/33.md) | 代表工具与分析架构 |
+| 53 | ch34 | [chapters/34.md](../chapters/34.md) | AI 辅助分析与证据管理 |
+| 54 | ch35 | [chapters/35.md](../chapters/35.md) | 评估分析器与实验设计 |
+| 55 | ch36 | [chapters/36.md](../chapters/36.md) | 搭建一个可运行的教学分析器 |

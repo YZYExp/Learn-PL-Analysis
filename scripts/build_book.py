@@ -37,6 +37,8 @@ with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslev
         if not path.is_file():
             continue
         rel = path.relative_to(ROOT)
+        if path.suffix in {'.vo', '.vos', '.vok', '.glob', '.pyc'} or path.name.endswith('.aux'):
+            continue
         if any(part in {'.git', '__pycache__'} for part in rel.parts):
             continue
         if rel.parts[0] == 'build' and path.name not in {'程序分析图解.md', 'checks.json', 'history.bundle'}:

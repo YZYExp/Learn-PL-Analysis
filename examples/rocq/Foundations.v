@@ -33,7 +33,7 @@ Proof.
   - reflexivity.
   - change (S (S (two_per_item k)) = S (k + S k)).
     rewrite IH.
-    rewrite Nat.add_succ.
+    rewrite Nat.add_succ_r.
     reflexivity.
 Qed.
 

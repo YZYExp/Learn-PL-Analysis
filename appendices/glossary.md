@@ -53,3 +53,24 @@
 | 条件数 / Condition number | 问题本身对输入扰动的敏感程度，与某个具体算法的稳定性不同 |
 | CEGIS | 生成候选、寻找反例、加入反例约束并再次生成的合成循环；有限语法和测试范围限制结论 |
 | 摘要失效 | 已缓存结论的输入、语义模型或依赖改变后，旧结论不能继续直接复用 |
+
+## Rocq与C验证术语
+
+| 术语 | 含义与边界 |
+|---|---|
+| Rocq / Coq | 同一证明系统名称沿革中的现名与旧名；旧论文、库名和源码仍可能使用Coq字样。随书Rocq例子固定9.0.0，不表示它是最新版本 |
+| Gallina | Rocq中表达数据、递归函数、命题与证明项的语言；不等同于用于构造证明的策略脚本 |
+| 结构归纳 / Structural induction | 按归纳数据的构造方式证明性质；递归分支可使用较小结构的归纳假设，不能把当前结论直接当作前提 |
+| Print Assumptions | Rocq中查询结论所依赖全局假设的命令；无额外全局假设不等于无需信任逻辑、内核或模型对应 |
+| 语义保持 / Semantic preservation | 按明确语义、观察和前提，证明变换后程序的行为满足规定的对应关系；不自动包含执行时间与物理侧信道 |
+| 模拟关系 / Simulation | 联系两种语义状态与推进步骤的关系；前向、后向模拟各有证明义务，不能任意交换方向 |
+| CompCert | 以机器检查证明连接其源语言与汇编级语义的C编译器项目；核心AST到AST结论不自动验证完整外部工具链 |
+| Clight | CompCert中具有明确操作语义的简化C中间语言；并非任意C文本，也不等于已经汇编的机器代码 |
+| VST | Verified Software Toolchain，以分离逻辑和CompCert相关C语义组织C程序验证的框架；具体结论依赖规格、模型与所检查工程 |
+| 分离资源 / Separating resources | 在指定资源模型中能够分离组合的权限或内存资源；与变量名称不同、物理内存完全隔离不是同一概念 |
+| semax_body | VST中用于表达函数体相对环境和函数规格正确性的判断；写出该判断不等于已完成证明，更不等于验证任意调用者或整个系统 |
+| 形式化链接 / Formal linking | 在形式模型中组合程序单元并推导语义关系；不能因此认定任意系统链接器和混合工具链已经被验证 |
+
+以上释义配合[Rocq实作](../chapters/52.md)、[同题对照](../chapters/53.md)、[CompCert案例](../chapters/54.md)与[VST案例](../chapters/55.md)阅读；具体判断仍以所引用版本的定义为准。
+
+本节一手资料入口：[Rocq 9.0.0手册](https://rocq-prover.org/doc/V9.0.0/refman/)、[Clight源码定义](https://compcert.org/doc/html/compcert.cfrontend.Clight.html)、[Software Foundations：Verifiable C入门](https://softwarefoundations.cis.upenn.edu/vc-current/Verif_sumarray.html)。

@@ -501,5 +501,5 @@
   ],
   "cover": "assets/images/cover.png",
   "edition": "rocq-expanded",
-  "numbering_schema": "rocq-planned"
+  "numbering_schema": "rocq-v3"
 }
