@@ -1,7 +1,7 @@
 {
   "title": "程序分析图解：语言、运行时与机器行为",
   "language": "zh-CN",
-  "description": "围绕程序行为，贯通语言语义、分析方法、运行时、CPU/GPU 与实际应用。",
+  "description": "围绕程序行为，贯通语言语义、静态与动态分析、形式化证明、机器执行和工程验证。",
   "chapters": [
     {
       "id": "ch01",
@@ -9,7 +9,8 @@
       "part_title": "语言与行为",
       "title": "程序分析的地图与边界",
       "source": "chapters/01.md",
-      "slug": "chapter-01"
+      "slug": "chapter-01",
+      "number": 1
     },
     {
       "id": "ch02",
@@ -17,7 +18,8 @@
       "part_title": "语言与行为",
       "title": "程序语义：状态、求值与可观察行为",
       "source": "chapters/02.md",
-      "slug": "chapter-02"
+      "slug": "chapter-02",
+      "number": 2
     },
     {
       "id": "ch03",
@@ -25,7 +27,8 @@
       "part_title": "语言与行为",
       "title": "语言设计：类型、效果与所有权",
       "source": "chapters/03.md",
-      "slug": "chapter-03"
+      "slug": "chapter-03",
+      "number": 3
     },
     {
       "id": "ch04",
@@ -33,7 +36,8 @@
       "part_title": "语言与行为",
       "title": "分析对象：数值、对象、资源与协议",
       "source": "chapters/04.md",
-      "slug": "chapter-04"
+      "slug": "chapter-04",
+      "number": 4
     },
     {
       "id": "ch05",
@@ -41,7 +45,8 @@
       "part_title": "语言与行为",
       "title": "运行时：解释器、虚拟机、GC 与 JIT",
       "source": "chapters/05.md",
-      "slug": "chapter-05"
+      "slug": "chapter-05",
+      "number": 5
     },
     {
       "id": "ch06",
@@ -49,7 +54,8 @@
       "part_title": "语言与行为",
       "title": "正确性、规格与分析的可信边界",
       "source": "chapters/06.md",
-      "slug": "chapter-06"
+      "slug": "chapter-06",
+      "number": 6
     },
     {
       "id": "ch07",
@@ -57,7 +63,8 @@
       "part_title": "程序表示",
       "title": "从源码到 AST 与符号表",
       "source": "chapters/07.md",
-      "slug": "chapter-07"
+      "slug": "chapter-07",
+      "number": 7
     },
     {
       "id": "ch08",
@@ -65,7 +72,8 @@
       "part_title": "程序表示",
       "title": "中间表示、SSA 与编译过程",
       "source": "chapters/08.md",
-      "slug": "chapter-08"
+      "slug": "chapter-08",
+      "number": 8
     },
     {
       "id": "ch09",
@@ -73,7 +81,8 @@
       "part_title": "程序表示",
       "title": "控制流、支配关系与循环",
       "source": "chapters/09.md",
-      "slug": "chapter-09"
+      "slug": "chapter-09",
+      "number": 9
     },
     {
       "id": "ch10",
@@ -81,7 +90,8 @@
       "part_title": "程序表示",
       "title": "调用图、动态分派与跨函数边界",
       "source": "chapters/10.md",
-      "slug": "chapter-10"
+      "slug": "chapter-10",
+      "number": 10
     },
     {
       "id": "ch11",
@@ -89,7 +99,8 @@
       "part_title": "程序表示",
       "title": "依赖图与程序切片",
       "source": "chapters/11.md",
-      "slug": "chapter-11"
+      "slug": "chapter-11",
+      "number": 11
     },
     {
       "id": "ch12",
@@ -97,7 +108,8 @@
       "part_title": "程序表示",
       "title": "指针、别名、堆与对象模型",
       "source": "chapters/12.md",
-      "slug": "chapter-12"
+      "slug": "chapter-12",
+      "number": 12
     },
     {
       "id": "ch13",
@@ -105,7 +117,8 @@
       "part_title": "静态推理",
       "title": "数据流分析与工作列表",
       "source": "chapters/13.md",
-      "slug": "chapter-13"
+      "slug": "chapter-13",
+      "number": 13
     },
     {
       "id": "ch14",
@@ -113,7 +126,8 @@
       "part_title": "静态推理",
       "title": "格、不动点与抽象解释",
       "source": "chapters/14.md",
-      "slug": "chapter-14"
+      "slug": "chapter-14",
+      "number": 14
     },
     {
       "id": "ch15",
@@ -121,7 +135,8 @@
       "part_title": "静态推理",
       "title": "数值抽象、关系与路径敏感性",
       "source": "chapters/15.md",
-      "slug": "chapter-15"
+      "slug": "chapter-15",
+      "number": 15
     },
     {
       "id": "ch16",
@@ -129,7 +144,8 @@
       "part_title": "静态推理",
       "title": "跨函数摘要与上下文敏感性",
       "source": "chapters/16.md",
-      "slug": "chapter-16"
+      "slug": "chapter-16",
+      "number": 16
     },
     {
       "id": "ch17",
@@ -137,7 +153,8 @@
       "part_title": "静态推理",
       "title": "类型状态、资源与污点分析",
       "source": "chapters/17.md",
-      "slug": "chapter-17"
+      "slug": "chapter-17",
+      "number": 17
     },
     {
       "id": "ch18",
@@ -145,7 +162,8 @@
       "part_title": "静态推理",
       "title": "规则、Datalog 与查询式分析",
       "source": "chapters/18.md",
-      "slug": "chapter-18"
+      "slug": "chapter-18",
+      "number": 18
     },
     {
       "id": "ch19",
@@ -153,7 +171,8 @@
       "part_title": "动态与验证",
       "title": "插桩、轨迹与覆盖率",
       "source": "chapters/19.md",
-      "slug": "chapter-19"
+      "slug": "chapter-19",
+      "number": 19
     },
     {
       "id": "ch20",
@@ -161,7 +180,8 @@
       "part_title": "动态与验证",
       "title": "动态检测、Sanitizer 与运行时验证",
       "source": "chapters/20.md",
-      "slug": "chapter-20"
+      "slug": "chapter-20",
+      "number": 20
     },
     {
       "id": "ch21",
@@ -169,7 +189,8 @@
       "part_title": "动态与验证",
       "title": "符号执行、SMT 与路径爆炸",
       "source": "chapters/21.md",
-      "slug": "chapter-21"
+      "slug": "chapter-21",
+      "number": 21
     },
     {
       "id": "ch22",
@@ -177,7 +198,8 @@
       "part_title": "动态与验证",
       "title": "模糊测试、Concolic 与混合分析",
       "source": "chapters/22.md",
-      "slug": "chapter-22"
+      "slug": "chapter-22",
+      "number": 22
     },
     {
       "id": "ch23",
@@ -185,7 +207,8 @@
       "part_title": "动态与验证",
       "title": "并发、异步与记录重放",
       "source": "chapters/23.md",
-      "slug": "chapter-23"
+      "slug": "chapter-23",
+      "number": 23
     },
     {
       "id": "ch24",
@@ -193,104 +216,253 @@
       "part_title": "动态与验证",
       "title": "模型检查、契约与演绎验证",
       "source": "chapters/24.md",
-      "slug": "chapter-24"
+      "slug": "chapter-24",
+      "number": 24
+    },
+    {
+      "id": "ch37",
+      "title": "形式化方法的地图与规格细化",
+      "source": "chapters/37.md",
+      "slug": "chapter-37",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 25
+    },
+    {
+      "id": "ch38",
+      "title": "命题、类型与证明助手",
+      "source": "chapters/38.md",
+      "slug": "chapter-38",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 26
+    },
+    {
+      "id": "ch39",
+      "title": "Lean 实作：从定理陈述到内核检查",
+      "source": "chapters/39.md",
+      "slug": "chapter-39",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 27
+    },
+    {
+      "id": "ch40",
+      "title": "证明程序满足规格：归纳、契约与状态转换",
+      "source": "chapters/40.md",
+      "slug": "chapter-40",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 28
+    },
+    {
+      "id": "ch41",
+      "title": "程序等价、精化与编译变换验证",
+      "source": "chapters/41.md",
+      "slug": "chapter-41",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 29
+    },
+    {
+      "id": "ch42",
+      "title": "证明分析器与理解可信计算基础",
+      "source": "chapters/42.md",
+      "slug": "chapter-42",
+      "part": 5,
+      "part_title": "形式化规格与机器检查证明",
+      "number": 30
     },
     {
       "id": "ch25",
-      "part": 5,
+      "part": 6,
       "part_title": "机器与异构",
       "title": "CPU、ABI 与机器级程序行为",
       "source": "chapters/25.md",
-      "slug": "chapter-25"
+      "slug": "chapter-25",
+      "number": 31
     },
     {
       "id": "ch26",
-      "part": 5,
+      "part": 6,
       "part_title": "机器与异构",
       "title": "内存模型、原子操作与可见性",
       "source": "chapters/26.md",
-      "slug": "chapter-26"
+      "slug": "chapter-26",
+      "number": 32
     },
     {
       "id": "ch27",
-      "part": 5,
+      "part": 6,
       "part_title": "机器与异构",
       "title": "逆向、反汇编与反编译",
       "source": "chapters/27.md",
-      "slug": "chapter-27"
+      "slug": "chapter-27",
+      "number": 33
     },
     {
       "id": "ch28",
-      "part": 5,
+      "part": 6,
       "part_title": "机器与异构",
       "title": "GPU：SIMT、内存与同步",
       "source": "chapters/28.md",
-      "slug": "chapter-28"
+      "slug": "chapter-28",
+      "number": 34
     },
     {
       "id": "ch29",
-      "part": 5,
+      "part": 6,
       "part_title": "机器与异构",
       "title": "性能分析：CPU、GPU 与数据搬运",
       "source": "chapters/29.md",
-      "slug": "chapter-29"
+      "slug": "chapter-29",
+      "number": 35
     },
     {
       "id": "ch30",
-      "part": 5,
+      "part": 6,
       "part_title": "机器与异构",
       "title": "跨语言、FFI 与动态机制",
       "source": "chapters/30.md",
-      "slug": "chapter-30"
+      "slug": "chapter-30",
+      "number": 36
+    },
+    {
+      "id": "ch43",
+      "title": "形状分析、分离逻辑与内存所有权",
+      "source": "chapters/43.md",
+      "slug": "chapter-43",
+      "part": 7,
+      "part_title": "数据、内存与资源的深入推理",
+      "number": 37
+    },
+    {
+      "id": "ch44",
+      "title": "字符串、容器与数据结构分析",
+      "source": "chapters/44.md",
+      "slug": "chapter-44",
+      "part": 7,
+      "part_title": "数据、内存与资源的深入推理",
+      "number": 38
+    },
+    {
+      "id": "ch45",
+      "title": "终止性、递归与资源复杂度",
+      "source": "chapters/45.md",
+      "slug": "chapter-45",
+      "part": 7,
+      "part_title": "数据、内存与资源的深入推理",
+      "number": 39
+    },
+    {
+      "id": "ch47",
+      "title": "信息流、非干扰与隐私边界",
+      "source": "chapters/47.md",
+      "slug": "chapter-47",
+      "part": 7,
+      "part_title": "数据、内存与资源的深入推理",
+      "number": 40
+    },
+    {
+      "id": "ch48",
+      "title": "浮点语义、数值误差与稳定性",
+      "source": "chapters/48.md",
+      "slug": "chapter-48",
+      "part": 7,
+      "part_title": "数据、内存与资源的深入推理",
+      "number": 41
+    },
+    {
+      "id": "ch46",
+      "title": "反例解释、可行性检查与抽象细化",
+      "source": "chapters/46.md",
+      "slug": "chapter-46",
+      "part": 8,
+      "part_title": "分析细化与工程闭环",
+      "number": 42
+    },
+    {
+      "id": "ch49",
+      "title": "分布式、持久化与崩溃恢复",
+      "source": "chapters/49.md",
+      "slug": "chapter-49",
+      "part": 8,
+      "part_title": "分析细化与工程闭环",
+      "number": 43
+    },
+    {
+      "id": "ch50",
+      "title": "增量分析、大型工程与摘要失效",
+      "source": "chapters/50.md",
+      "slug": "chapter-50",
+      "part": 8,
+      "part_title": "分析细化与工程闭环",
+      "number": 44
+    },
+    {
+      "id": "ch51",
+      "title": "程序合成、自动修复与验证闭环",
+      "source": "chapters/51.md",
+      "slug": "chapter-51",
+      "part": 8,
+      "part_title": "分析细化与工程闭环",
+      "number": 45
     },
     {
       "id": "ch31",
-      "part": 6,
+      "part": 9,
       "part_title": "应用与构建",
       "title": "缺陷、安全性质与威胁模型",
       "source": "chapters/31.md",
-      "slug": "chapter-31"
+      "slug": "chapter-31",
+      "number": 46
     },
     {
       "id": "ch32",
-      "part": 6,
+      "part": 9,
       "part_title": "应用与构建",
       "title": "优化、维护与变更影响分析",
       "source": "chapters/32.md",
-      "slug": "chapter-32"
+      "slug": "chapter-32",
+      "number": 47
     },
     {
       "id": "ch33",
-      "part": 6,
+      "part": 9,
       "part_title": "应用与构建",
       "title": "代表工具与分析架构",
       "source": "chapters/33.md",
-      "slug": "chapter-33"
+      "slug": "chapter-33",
+      "number": 48
     },
     {
       "id": "ch34",
-      "part": 6,
+      "part": 9,
       "part_title": "应用与构建",
       "title": "AI 辅助分析与证据管理",
       "source": "chapters/34.md",
-      "slug": "chapter-34"
+      "slug": "chapter-34",
+      "number": 49
     },
     {
       "id": "ch35",
-      "part": 6,
+      "part": 9,
       "part_title": "应用与构建",
       "title": "评估分析器与实验设计",
       "source": "chapters/35.md",
-      "slug": "chapter-35"
+      "slug": "chapter-35",
+      "number": 50
     },
     {
       "id": "ch36",
-      "part": 6,
+      "part": 9,
       "part_title": "应用与构建",
       "title": "搭建一个可运行的教学分析器",
       "source": "chapters/36.md",
-      "slug": "chapter-36"
+      "slug": "chapter-36",
+      "number": 51
     }
   ],
-  "cover": "assets/images/cover.png"
+  "cover": "assets/images/cover.png",
+  "edition": "expanded"
 }
